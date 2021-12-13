@@ -1,0 +1,63 @@
+# BEGIN WPSuperCache
+# Dyrektywy zawarte między "BEGIN WPSuperCache" oraz "END WPSuperCache"
+# są generowane dynamicznie i powinny być modyfikowane tylko za pomocą
+# filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
+# END WPSuperCache
+# BEGIN WordPress
+# Dyrektywy zawarte między "BEGIN WordPress" oraz "END WordPress"
+# są generowane dynamicznie i powinny być modyfikowane tylko za pomocą
+# filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN WP-HUMMINGBIRD-CACHING
+# Dyrektywy zawarte między "BEGIN WP-HUMMINGBIRD-CACHING" oraz "END WP-HUMMINGBIRD-CACHING"
+# są generowane dynamicznie i powinny być modyfikowane tylko za pomocą
+# filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault A0
+
+<FilesMatch "\.(txt|xml|js)$">
+ExpiresDefault A31536000
+</FilesMatch>
+
+<FilesMatch "\.(css)$">
+ExpiresDefault A31536000
+</FilesMatch>
+
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|mp4|m4v|ogg|webm|aac|eot|ttf|otf|woff|svg)$">
+ExpiresDefault A31536000
+</FilesMatch>
+
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|webp)$">
+ExpiresDefault A31536000
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(txt|xml|js)$">
+   Header set Cache-Control "max-age=31536000"
+  </FilesMatch>
+
+  <FilesMatch "\.(css)$">
+   Header set Cache-Control "max-age=31536000"
+  </FilesMatch>
+
+  <FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|mp4|m4v|ogg|webm|aac|eot|ttf|otf|woff|svg)$">
+   Header set Cache-Control "max-age=31536000"
+  </FilesMatch>
+
+  <FilesMatch "\.(jpg|jpeg|png|gif|swf|webp)$">
+   Header set Cache-Control "max-age=31536000"
+  </FilesMatch>
+</IfModule>
+# END WP-HUMMINGBIRD-CACHING

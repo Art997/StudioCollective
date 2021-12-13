@@ -1,0 +1,5 @@
+PROCESSED on Wed, 13 Jan 2021 18:48:01 +0000
+/wp-includes/css/dist/block-library/style.min.css
+/wp-content/plugins/contact-form-7/includes/css/styles.css
+/wp-content/plugins/content-protector/assets/public/passster-public.min.css
+PROCESSED from https://www.studiocollective.pl/?ao_speedup_cachebuster=73389

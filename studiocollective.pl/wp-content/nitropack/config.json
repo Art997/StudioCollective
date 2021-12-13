@@ -1,0 +1,19 @@
+{
+    "www.studiocollective.pl": {
+        "siteId": "JSJGyKRkFExPsRvvESfLrxGTSsWPRyKx",
+        "siteSecret": "cX8TyHXDXaKfO2vBvuHTdzwwLn0LElpG6mkoBGOtCQpk8RpbZa0F2ERs06QZ2w3h",
+        "blogId": 1,
+        "compression": false,
+        "webhookToken": "668a72d9852f66647104b68f3239ea7e",
+        "home_url": "https:\/\/www.studiocollective.pl",
+        "admin_url": "https:\/\/www.studiocollective.pl\/wp-admin\/",
+        "hosting": "unknown",
+        "alwaysBuffer": true,
+        "isEzoicActive": false,
+        "isLateIntegrationInitRequired": false,
+        "isDlmActive": false,
+        "dlm_downloading_url": null,
+        "dlm_download_endpoint": null,
+        "pluginVersion": "1.5.7"
+    }
+}
